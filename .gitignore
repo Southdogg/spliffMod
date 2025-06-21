@@ -1,0 +1,18 @@
+# Игнорируем пользовательские и игровые директории
+behavior_packs/
+custom_skins/
+development_skin_packs/
+minecraftpe/
+minecraftWorlds/
+resource_packs/
+Screenshots/
+skin_packs/
+world_templates/
+
+# Игнорируем игровые .dat-файлы
+ud281965153.dat
+ud2641811131.dat
+
+# Исключаем Git-репозиторий и сам .gitignore из игнор-листа
+!.gitignore
+!.git/

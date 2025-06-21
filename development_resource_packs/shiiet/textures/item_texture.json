@@ -1,0 +1,8 @@
+{
+    "resource_pack_name" : "Goo Resource Pack",
+    "texture_data": {
+        "demo:wildseeds": {
+            "textures" : "textures/items/wild_seeds"
+        }
+    }
+}
