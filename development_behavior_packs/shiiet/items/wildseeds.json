@@ -14,7 +14,7 @@
                 "value": "Wild Seed"
             },
             "minecraft:block_placer": {
-                "block": "minecraft:dirt",
+                "block": "demo:wildplant",
                 "use_on": [
                     "farmland"
                 ]

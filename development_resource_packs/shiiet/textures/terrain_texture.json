@@ -1,0 +1,9 @@
+{
+    "resource_pack_name": "vanila",
+    "texture_name": "atlas.terrain",
+    "texture_data": {
+        "demo:wildplant": {
+            "textures": "textures/blocks/wild_plant"
+        }
+    }
+}

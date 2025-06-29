@@ -1,5 +1,6 @@
 {
-    "resource_pack_name" : "Goo Resource Pack",
+    "resource_pack_name" : "vanila",
+    "texture_name": "atlas.items",
     "texture_data": {
         "demo:wildseeds": {
             "textures" : "textures/items/wild_seeds"

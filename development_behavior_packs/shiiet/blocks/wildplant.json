@@ -1,0 +1,23 @@
+{
+    "format_version": "1.20.30",
+    "minecraft:block": {
+        "description": {
+            "identifier" : "demo:wildplant",
+            "menu_category": {
+                "category" : "nature"
+            }
+        },
+        "components" : {
+            "minecraft:geometry" : "minecraft:geometry.cross",
+            "minecraft:material_instances": {
+                "*" : {
+                    "texture" : "demo:wildplant",
+                    "render_method": "alpha_test"
+                }
+            },
+            "minecraft:destructible_by_mining" : {
+                "seconds_to_destroy": 1.5
+            }
+        }
+    }
+}

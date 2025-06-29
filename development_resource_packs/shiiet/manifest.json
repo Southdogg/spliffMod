@@ -1,18 +1,24 @@
 {
   "format_version": 2,
   "header": {
-    "description": "Goo Resource Pack",
-    "name": "Goo Resource Pack",
+    "description": "WeedResource",
+    "name": "WeedResource",
     "uuid": "be0b3b70-2155-438e-8acd-477aa37822af",
     "version": [1, 0, 1],
     "min_engine_version": [1, 20, 30]
   },
   "modules": [
     {
-      "description": "Goo Resource Pack",
+      "description": "WeedResource",
       "type": "resources",
       "uuid": "520d366f-45fd-46fe-8555-18fc71dd2113",
       "version": [1, 0, 1]
+    }
+  ],
+    "dependencies": [
+    {
+      "uuid": "6207be0c-18f5-4f7e-aea4-b7d8683c7070", 
+      "version": [1, 0, 0]
     }
   ]
 }
