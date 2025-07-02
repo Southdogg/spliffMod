@@ -5,7 +5,7 @@
     "name": "WeedResource",
     "uuid": "be0b3b70-2155-438e-8acd-477aa37822af",
     "version": [1, 0, 1],
-    "min_engine_version": [1, 20, 30]
+    "min_engine_version": [1, 20, 40]
   },
   "modules": [
     {

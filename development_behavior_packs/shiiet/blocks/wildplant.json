@@ -1,22 +1,47 @@
 {
-    "format_version": "1.20.30",
+    "format_version": "1.21.10",
     "minecraft:block": {
         "description": {
-            "identifier" : "demo:wildplant",
-            "menu_category": {
-                "category" : "nature"
-            }
+            "identifier": "demo:wildplant"
         },
-        "components" : {
-            "minecraft:geometry" : "minecraft:geometry.cross",
+        "components": {
+            "minecraft:geometry": "minecraft:geometry.cross",
+            "minecraft:transformation": {
+                "translation": [
+                    0,
+                    -0.1,
+                    0
+                ],
+                "scale": [
+                    1,
+                    1,
+                    1
+                ],
+                "rotation": [
+                    0,
+                    0,
+                    0
+                ]
+            },
             "minecraft:material_instances": {
-                "*" : {
-                    "texture" : "demo:wildplant",
-                    "render_method": "alpha_test"
+                "*": {
+                    "texture": "demo:wildplant",
+                    "render_method": "alpha_test_single_sided"
                 }
             },
-            "minecraft:destructible_by_mining" : {
-                "seconds_to_destroy": 1.5
+            "minecraft:collision_box": false,
+            "minecraft:selection_box": true,
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                        "allowed_faces": [
+                            "up"
+                        ],
+                        "block_filter": [
+                            "minecraft:farmland"
+                        ]
+                    }
+                ]
             }
         }
     }

@@ -2,8 +2,9 @@
     "resource_pack_name": "vanila",
     "texture_name": "atlas.terrain",
     "texture_data": {
-        "demo:wildplant": {
-            "textures": "textures/blocks/wild_plant"
-        }
+        "demo:wildplant": {"textures": "textures/blocks/wild_plant_stage0" },
+        "demo:wildplant_stage1": {"textures": "textures/blocks/wild_plant_stage1"},
+        "demo:wildplant_stage2": {"textures": "textures/blocks/wild_plant_stage2"},
+        "demo:wildplant_stage3": {"textures": "textures/blocks/wild_plant_stage3"}
     }
 }
