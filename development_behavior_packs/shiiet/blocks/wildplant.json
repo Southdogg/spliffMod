@@ -2,8 +2,57 @@
     "format_version": "1.21.10",
     "minecraft:block": {
         "description": {
-            "identifier": "demo:wildplant"
+            "identifier": "demo:wildplant",
+            "states": {
+                "demo:growth_stage": {
+                    "values" : {"min" : 0,"max": 3}
+                }
+            }
         },
+        "permutations": [
+            {
+                "condition":"q.block_state('demo:growth_stage') < 3",
+                "components" : {
+                    "demo:growable" : {
+                        "growth_state": "demo:growth_stage",
+                        "growth_chance": 100
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('demo:growth_stage') == 1",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "demo:wildplant_stage1",
+                            "render_method": "alpha_test_single_sided"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('demo:growth_stage') == 2",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "demo:wildplant_stage2",
+                            "render_method": "alpha_test_single_sided"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('demo:growth_stage') == 3",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "demo:wildplant_stage3",
+                            "render_method": "alpha_test_single_sided"
+                        }
+                    }
+                }
+            }
+        ],
         "components": {
             "minecraft:geometry": "minecraft:geometry.cross",
             "minecraft:transformation": {

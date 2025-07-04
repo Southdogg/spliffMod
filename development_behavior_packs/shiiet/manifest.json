@@ -4,15 +4,39 @@
     "description": "WeedResource",
     "name": "WeedResource",
     "uuid": "6207be0c-18f5-4f7e-aea4-b7d8683c7070",
-    "version": [1, 0, 1],
-    "min_engine_version": [1, 20, 40]
+    "version": [
+      1,
+      0,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      0
+    ]
   },
   "modules": [
     {
-      "description": "WeedResource",
+      "description": "WeedBehavior",
       "type": "data",
       "uuid": "58bd9152-832d-4cca-a780-5d0b672d2283",
-      "version": [1, 0, 1]
+      "version": [1,0,1]
+    },
+    {
+      "type": "script",
+      "uuid": "1731ddc8-e78b-4b34-a588-3450a30b2b3a",
+      "version": [1,0,1],
+      "entry": "scripts/main.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "be0b3b70-2155-438e-8acd-477aa37822af",
+      "version": [1,0, 1 ]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.0.0"
     }
   ]
 }

@@ -2,10 +2,10 @@
   "format_version": 2,
   "header": {
     "description": "WeedResource",
-    "name": "WeedResource",
+    "name": "WeedResourceMod",
     "uuid": "be0b3b70-2155-438e-8acd-477aa37822af",
     "version": [1, 0, 1],
-    "min_engine_version": [1, 20, 40]
+    "min_engine_version": [1, 21, 0]
   },
   "modules": [
     {
@@ -18,7 +18,7 @@
     "dependencies": [
     {
       "uuid": "6207be0c-18f5-4f7e-aea4-b7d8683c7070", 
-      "version": [1, 0, 0]
+      "version": [1, 0, 1]
     }
   ]
 }
