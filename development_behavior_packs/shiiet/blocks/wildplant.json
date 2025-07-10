@@ -5,17 +5,38 @@
             "identifier": "demo:wildplant",
             "states": {
                 "demo:growth_stage": {
-                    "values" : {"min" : 0,"max": 3}
+                    "values": {
+                        "min": 0,
+                        "max": 3
+                    }
                 }
             }
         },
         "permutations": [
             {
-                "condition":"q.block_state('demo:growth_stage') < 3",
-                "components" : {
-                    "demo:growable" : {
+                "condition": "q.block_state('demo:growth_stage') <= 3",
+                "components": {
+                    "demo:growable": {
                         "growth_state": "demo:growth_stage",
                         "growth_chance": 100
+                    },
+                    "minecraft:loot": "loot_tables/blocks/wildplant_crop_young.json"
+                }
+            },
+            {
+                "condition": "q.block_state('demo:growth_stage') == 0",
+                "components": {
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            1.6,
+                            16
+                        ]
                     }
                 }
             },
@@ -27,6 +48,18 @@
                             "texture": "demo:wildplant_stage1",
                             "render_method": "alpha_test_single_sided"
                         }
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            1.6,
+                            16
+                        ]
                     }
                 }
             },
@@ -38,17 +71,42 @@
                             "texture": "demo:wildplant_stage2",
                             "render_method": "alpha_test_single_sided"
                         }
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            3.7,
+                            16
+                        ]
                     }
                 }
             },
             {
                 "condition": "q.block_state('demo:growth_stage') == 3",
                 "components": {
+                    "minecraft:loot": "loot_tables/blocks/wildplant_crop_young.json",
                     "minecraft:material_instances": {
                         "*": {
                             "texture": "demo:wildplant_stage3",
                             "render_method": "alpha_test_single_sided"
                         }
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            13,
+                            16
+                        ]
                     }
                 }
             }

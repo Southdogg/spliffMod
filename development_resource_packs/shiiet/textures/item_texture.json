@@ -4,6 +4,9 @@
     "texture_data": {
         "demo:wildseeds": {
             "textures" : "textures/items/wild_seeds"
+        },
+        "demo:wildbud": {
+            "textures" : "textures/items/wild_bud"
         }
     }
 }
